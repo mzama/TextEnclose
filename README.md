@@ -1,0 +1,1 @@
+A simple Chrome Extension that allows selected text to be enclosed within certain characters, such as brackets or quotation marks, rather than overwriting them.
