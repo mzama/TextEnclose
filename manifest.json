@@ -4,6 +4,21 @@
   "name": "Text Enclose",
   "version": "1.0",
   "description": "Encloses selected text within specific characters.",
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [        
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "js/main.js"
+      ]
+    }
+  ],
 
   "page_action": {
     "default_popup": "popup.html",
