@@ -1,6 +1,6 @@
 {
-    "name": "Text Enclose",
-    "version": "1.0",
-    "description": "Encloses selected text within specific characters.",
-    "manifest_version": 2
-  }
+  "name": "Text Enclose",
+  "version": "1.0",
+  "description": "Encloses selected text within specific characters.",
+  "manifest_version": 2
+}
