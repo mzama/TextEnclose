@@ -1,6 +1,24 @@
 {
+  "manifest_version": 2,
+
   "name": "Text Enclose",
   "version": "1.0",
   "description": "Encloses selected text within specific characters.",
-  "manifest_version": 2
+
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "Icon/Icon_16.png",
+      "32": "Icon/Icon_32.png",
+      "48": "Icon/Icon_48.png",
+      "128":"Icon/Icon_128.png"
+    }
+  },
+
+  "icons": {
+    "16": "Icon/Icon_16.png",
+    "32": "Icon/Icon_32.png",
+    "48": "Icon/Icon_48.png",
+    "128":"Icon/Icon_128.png"
+  }  
 }
