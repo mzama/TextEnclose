@@ -5,7 +5,8 @@
   "version": "1.0",
   "description": "Encloses selected text within specific characters.",
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
 
   "content_scripts": [
@@ -17,6 +18,9 @@
       "matches": [        
         "http://*/*",
         "https://*/*"
+      ],
+      "exclude_matches": [
+        "*://*.facebook.com/*"
       ],
       "run_at": "document_idle"      
     }
