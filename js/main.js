@@ -1,6 +1,7 @@
 // This program looks at a selection of text,
 // determines whether or not it is within an input field or text area,
 // and based on the key pressed, encloses that selection within certain characters (brackets, quotations, etc). 
+var isEnabled = true;
 var enclosingCharacters = [
     {
         openingChar: "'",
@@ -44,14 +45,14 @@ var enclosingCharacters = [
         writeWhenEmpty: false
     },
 ];
-
+document.querySelector("#enableButton").addEventListener("onclick", function(){console.log("clicked")});
 // Look for the selected text when a key is pressed -- if its within an input field, enclose it within the appropriate character
 document.onkeydown = function(e) {
     let _keyDown = e.key;
 
     //Determine if the key pressed corresponds to an enclosing character
     let _encChar = enclosingCharacters.filter(c => c.openingChar === _keyDown || c.closingChar === _keyDown)[0];
-    if (_encChar){
+    if (_encChar && isEnabled){
         //Get the current active element from the document
         let _activeElement = document.activeElement;
         let _elementTagName = _activeElement ? _activeElement.tagName.toLocaleLowerCase() : null;

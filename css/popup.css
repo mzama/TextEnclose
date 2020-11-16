@@ -1,3 +1,59 @@
+/* GLOBAL STYLES */
+:root {
+    --colour-theme: #287bc8;
+    --colour-base: #606060;
+}
+body {
+    background-color: #f8f8f8;
+    width: 400px;
+}
+.content-container {
+    color: var(--colour-base);
+    line-height: 1.35rem;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    width: 320px;
+}
+html {
+    font-family: "Roboto", "Open sans", "sans serif";
+    font-size: 16px;
+}
 h1 {
-    color: green;
+    color: var(--colour-theme);
+    font-family: "Open sans", "Roboto", "sans serif";
+    font-size: 1.75rem;
+}
+/* TITLE */
+.title-container {
+    background-color: #efefef;
+    padding: 0.5rem 40px;
+}
+.title-inner {
+    font-style: italic;
+}
+/* ENABLE SECTION */
+.enable-section {
+    margin-top: 0.5rem;
+}
+#enableButton {
+    border: 2px solid var(--colour-base);
+    border-radius: 1rem;
+    height: 1.5rem;
+    padding: 0.1rem;
+    transition: 0.25s all ease-in-out;
+    width: 1.5rem;
+}
+#enableButton:hover {
+    background-color: var(--colour-base);
+}
+#enableIcon {    
+    background-color: var(--colour-theme);
+    border: 0;
+    border-radius: 1rem;
+    height: 0.8rem;
+    margin: auto;
+    width: 0.8rem;
+}
+.hidden {
+    visibility: hidden;
 }

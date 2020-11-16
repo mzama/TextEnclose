@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Text Enclose!</title>
+        <title>(Text Enclose)</title>
         <meta charset="utf-8" />
         
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/popup.css" />
-        <script> </script>
-        <!-- Makes CSS Transitions work -->        
         <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body style="width: 400px">
-
-        <div class="content-container">
+    <body>
+        <div class="popup-container">
             <div class="title-container">
-                <h1>Text Enclose!</h1>
+                <h1>(<span class="title-inner">Text Enclose</span>)</h1>
             </div>
-            <div class="copy">
-                This is a test. This is more testing.
+            <div class="content-container">
+                <div class="enable-section">
+                    Enable: <button id="enableButton"><div id="enableIcon"></div></button>
+                </div>
+                <!-- <div class="charlist"> -->
+                    <!-- Characters: ['],["],[`],[/],[|],[\],[()],[[]],[{}],[<>] -->
+                <!-- </div> -->
             </div>
+
         </div>
-
-
     </body>
 </html>
