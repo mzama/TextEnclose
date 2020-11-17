@@ -42,7 +42,27 @@ var enclosingCharacters = [
         openingChar: '<',
         closingChar: '>',
         writeWhenEmpty: false
-    },
+    }, {
+        openingChar: '#',
+        closingChar: '#',
+        writeWhenEmpty: false
+    }, {
+        openingChar: '$',
+        closingChar: '$',
+        writeWhenEmpty: false
+    }, {
+        openingChar: '%',
+        closingChar: '%',
+        writeWhenEmpty: false
+    }, {
+        openingChar: '^',
+        closingChar: '^',
+        writeWhenEmpty: false
+    }, {
+        openingChar: '*',
+        closingChar: '*',
+        writeWhenEmpty: false
+    }
 ];
 // Look for the selected text when a key is pressed -- if its within an input field, enclose it within the appropriate character
 document.onkeydown = function(e) {
